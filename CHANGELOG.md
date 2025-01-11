@@ -2,6 +2,63 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-01-11)
+
+<section class="features">
+
+### Features
+
+-   [`773e934`](https://github.com/stdlib-js/stdlib/commit/773e9345811ce7fe6d910b35b9f60ccc6d1312d1) - add C implementation for `stats/base/dists/discrete-uniform/mean` [(#4530)](https://github.com/stdlib-js/stdlib/pull/4530)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3554](https://github.com/stdlib-js/stdlib/issues/3554)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`773e934`](https://github.com/stdlib-js/stdlib/commit/773e9345811ce7fe6d910b35b9f60ccc6d1312d1) - **feat:** add C implementation for `stats/base/dists/discrete-uniform/mean` [(#4530)](https://github.com/stdlib-js/stdlib/pull/4530) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Philipp Burckhardt
+-   Prashant Kumar Yadav
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.1">
 
 ## 0.2.1 (2024-07-27)
