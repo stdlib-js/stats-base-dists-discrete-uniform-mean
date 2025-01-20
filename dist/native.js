@@ -16,25 +16,40 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STATS_BASE_DISTS_DISCRETE_UNIFORM_MEAN_H
-#define STDLIB_STATS_BASE_DISTS_DISCRETE_UNIFORM_MEAN_H
+'use strict';
 
-#include <stdint.h>
+// MODULES //
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+var addon = require( './../src/addon.node' );
+
+
+// MAIN //
 
 /**
-* Returns the expected value of a discrete uniform distribution with parameters `a` (minimum support) and `b` (maximum support).
+* Returns the expected value of a discrete uniform distribution.
+*
+* @private
+* @param {integer} a - minimum support
+* @param {integer} b - maximum support
+* @returns {number} expected value
+*
+* @example
+* var v = mean( 0, 1 );
+* // returns 0.5
+*
+* @example
+* var v = mean( -4, 4 );
+* // returns 0.0
+*
+* @example
+* var v = mean( 0, 10 );
+* // returns 5.0
 */
-double stdlib_base_dists_discrete_uniform_mean( const int32_t a, const int32_t b );
-
-#ifdef __cplusplus
+function mean( a, b ) {
+	return addon( a, b );
 }
-#endif
 
-#endif // !STDLIB_STATS_BASE_DISTS_DISCRETE_UNIFORM_MEAN_H
+
+// EXPORTS //
+
+module.exports = mean;
