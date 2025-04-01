@@ -16,7 +16,40 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dists/discrete-uniform/mean.h"
-#include "stdlib/math/base/napi/binary.h"
+'use strict';
 
-STDLIB_MATH_BASE_NAPI_MODULE_II_D( stdlib_base_dists_discrete_uniform_mean )
+// MODULES //
+
+var addon = require( './../src/addon.node' );
+
+
+// MAIN //
+
+/**
+* Returns the expected value of a discrete uniform distribution.
+*
+* @private
+* @param {integer} a - minimum support
+* @param {integer} b - maximum support
+* @returns {number} expected value
+*
+* @example
+* var v = mean( 0, 1 );
+* // returns 0.5
+*
+* @example
+* var v = mean( -4, 4 );
+* // returns 0.0
+*
+* @example
+* var v = mean( 0, 10 );
+* // returns 5.0
+*/
+function mean( a, b ) {
+	return addon( a, b );
+}
+
+
+// EXPORTS //
+
+module.exports = mean;
