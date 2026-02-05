@@ -69,7 +69,7 @@ where `a` is the minimum support and `b` the maximum support of the distribution
 ## Usage
 
 ```javascript
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mean@deno/mod.js';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mean@v0.3.0-deno/mod.js';
 ```
 
 #### mean( a, b )
@@ -136,7 +136,7 @@ y = mean( -1, -2 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mean@deno/mod.js';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mean@v0.3.0-deno/mod.js';
 
 var a;
 var b;
